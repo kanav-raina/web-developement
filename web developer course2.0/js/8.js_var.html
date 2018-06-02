@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>variables in javascript</title>
+	</head>
+	<body>
+	<input type="text" id="iput" >
+	<button id="btn">change the text</button>
+	<p id="txt">
+	 hello there my name is Kanav Raina
+	</p>
+	
+		<script>
+		  document.getElementById("btn").onclick=function()
+		  {
+		   var x="";
+		   x=document.getElementById("iput").value;
+		   document.getElementById("txt").innerHTML=x;
+		  }
+		</script>
+	</body>
+</html>

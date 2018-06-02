@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>while</title>
+	</head>
+	<body>
+		<p>How many fingers I am holding ?</p>
+		<select id="no">
+		 <option>0</option>
+		 <option>1</option>
+		 <option>2</option>
+		 <option>3</option>
+		 <option>4</option>
+		 <option>5</option>
+		</select>
+		<br><br>
+		<button id="btn">check</button>
+		
+		<script>
+		document.getElementById("btn").onclick=function()
+		{
+		 var x=true
+		 var n=0
+		 count=1
+		 while(x)
+		 {
+		  n=Math.floor(Math.random()*6)
+		  if(n==document.getElementById("no").value)
+		  {
+		   alert("yes, you got it in "+count+" try")
+		   x=false
+		  }
+		  else
+		  {
+		   count++
+		  }
+		 
+		 }
+		}
+		</script>
+	</body>
+</html>

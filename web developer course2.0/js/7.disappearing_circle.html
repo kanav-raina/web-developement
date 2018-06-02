@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>disappear circle</title>
+		<style type=text/css>
+		  #fsq
+		  {background-color:red;}
+		  #ssq
+		  {background-color:blue;}
+		  #tsq
+		  {background-color:green;}
+		  .square
+		  {
+		   height:100px;
+		   width:100px;
+		   float: left;
+		   border-radius:50%;
+		   margin:10px;
+		   
+		  }
+		</style>
+	</head>
+	<body>
+		<div id="fsq" class="square"></div>
+		
+		<div id="ssq" class="square"></div>
+		
+		<div id="tsq" class="square"></div>
+		<script>
+		  document.getElementById("fsq").onclick=function()
+		   {
+		     document.getElementById("fsq").style.display="none";
+		   }
+		   document.getElementById("ssq").onclick=function()
+		   {
+		     document.getElementById("ssq").style.display="none";
+		   }
+		   document.getElementById("tsq").onclick=function()
+		   {
+		     document.getElementById("tsq").style.display="none";
+		   }
+		</script>
+	</body>
+</html>

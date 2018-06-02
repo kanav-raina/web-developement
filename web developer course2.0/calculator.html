@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Calculator</title>
+	</head>
+	<body>
+		<input type="number" id="one">
+		<input type="number" id="two">
+		<br><br>
+		<button id="add">ADD</button>
+		<button id="sub">SUB</button>
+		<button id="mul">MUL</button>
+		<button id="div">DIV</button>
+		<br><p>answer :</p>
+		<input type="number" id="three">
+		<script type="text/javascript">
+		  document.getElementById("add").onclick=function()
+		   {
+		     var a=1;
+		     var b=2;
+		     
+		     a=document.getElementById("one").value;
+		     b=document.getElementById("two").value;
+		     var c=+a + +b;
+		     document.getElementById("three").value=c;
+		    
+		   }
+		    document.getElementById("sub").onclick=function()
+		   {
+		     var a=1;
+		     var b=2;
+		     
+		     a=document.getElementById("one").value;
+		     b=document.getElementById("two").value;
+		     var c=a-b;
+		     document.getElementById("three").value=c;
+		    
+		   }
+		    document.getElementById("mul").onclick=function()
+		   {
+		     var a=1;
+		     var b=2;
+		     
+		     a=document.getElementById("one").value;
+		     b=document.getElementById("two").value;
+		     var c=a*b;
+		     document.getElementById("three").value=c;
+		    
+		   }
+		    document.getElementById("div").onclick=function()
+		   {
+		     var a=1;
+		     var b=2;
+		     
+		     a=document.getElementById("one").value;
+		     b=document.getElementById("two").value;
+		     var c=a/b;
+		     document.getElementById("three").value=c;
+		    
+		   }
+		</script>
+	</body>
+</html>
